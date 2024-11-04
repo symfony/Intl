@@ -14,6 +14,7 @@ namespace Symfony\Component\Intl\Tests;
 use Symfony\Component\Intl\Countries;
 use Symfony\Component\Intl\Exception\MissingResourceException;
 use Symfony\Component\Intl\Timezones;
+use Symfony\Component\Intl\Util\IntlTestHelper;
 
 /**
  * @group intl-data
@@ -468,6 +469,10 @@ class TimezonesTest extends ResourceBundleTestCase
      */
     public function testGetNames($displayLocale)
     {
+        if ('en' !== $displayLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         $zones = array_keys(Timezones::getNames($displayLocale));
 
         sort($zones);
@@ -478,6 +483,8 @@ class TimezonesTest extends ResourceBundleTestCase
 
     public function testGetNamesDefaultLocale()
     {
+        IntlTestHelper::requireFullIntl($this);
+
         \Locale::setDefault('de_AT');
 
         $this->assertSame(Timezones::getNames('de_AT'), Timezones::getNames());
@@ -488,6 +495,10 @@ class TimezonesTest extends ResourceBundleTestCase
      */
     public function testGetNamesSupportsAliases($alias, $ofLocale)
     {
+        if ('en' !== $ofLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         // Can't use assertSame(), because some aliases contain scripts with
         // different collation (=order of output) than their aliased locale
         // e.g. sr_Latn_ME => sr_ME
@@ -499,6 +510,10 @@ class TimezonesTest extends ResourceBundleTestCase
      */
     public function testGetName($displayLocale)
     {
+        if ('en' !== $displayLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         $names = Timezones::getNames($displayLocale);
 
         foreach ($names as $language => $name) {
@@ -508,6 +523,8 @@ class TimezonesTest extends ResourceBundleTestCase
 
     public function testGetNameDefaultLocale()
     {
+        IntlTestHelper::requireFullIntl($this);
+
         \Locale::setDefault('de_AT');
 
         $names = Timezones::getNames('de_AT');
@@ -603,6 +620,12 @@ class TimezonesTest extends ResourceBundleTestCase
      */
     public function testGetGmtOffsetAvailability(string $timezone)
     {
+        try {
+            new \DateTimeZone($timezone);
+        } catch (\Exception $e) {
+           $this->markTestSkipped(sprintf('The timezone "%s" is not available.', $timezone));
+        }
+
         // ensure each timezone identifier has a corresponding GMT offset
         Timezones::getRawOffset($timezone);
         Timezones::getGmtOffset($timezone);

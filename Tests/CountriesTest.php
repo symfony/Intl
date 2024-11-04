@@ -13,6 +13,7 @@ namespace Symfony\Component\Intl\Tests;
 
 use Symfony\Component\Intl\Countries;
 use Symfony\Component\Intl\Exception\MissingResourceException;
+use Symfony\Component\Intl\Util\IntlTestHelper;
 
 /**
  * @group intl-data
@@ -535,6 +536,10 @@ class CountriesTest extends ResourceBundleTestCase
      */
     public function testGetNames($displayLocale)
     {
+        if ('en' !== $displayLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         $countries = array_keys(Countries::getNames($displayLocale));
 
         sort($countries);
@@ -544,6 +549,8 @@ class CountriesTest extends ResourceBundleTestCase
 
     public function testGetNamesDefaultLocale()
     {
+        IntlTestHelper::requireFullIntl($this);
+
         \Locale::setDefault('de_AT');
 
         $this->assertSame(Countries::getNames('de_AT'), Countries::getNames());
@@ -554,6 +561,10 @@ class CountriesTest extends ResourceBundleTestCase
      */
     public function testGetNamesSupportsAliases($alias, $ofLocale)
     {
+        if ('en' !== $ofLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         // Can't use assertSame(), because some aliases contain scripts with
         // different collation (=order of output) than their aliased locale
         // e.g. sr_Latn_ME => sr_ME
@@ -565,6 +576,10 @@ class CountriesTest extends ResourceBundleTestCase
      */
     public function testGetName($displayLocale)
     {
+        if ('en' !== $displayLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         $names = Countries::getNames($displayLocale);
 
         foreach ($names as $country => $name) {
@@ -636,6 +651,10 @@ class CountriesTest extends ResourceBundleTestCase
      */
     public function testGetAlpha3Name($displayLocale)
     {
+        if ('en' !== $displayLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         $names = Countries::getNames($displayLocale);
 
         foreach ($names as $alpha2 => $name) {
@@ -656,6 +675,10 @@ class CountriesTest extends ResourceBundleTestCase
      */
     public function testGetAlpha3Names($displayLocale)
     {
+        if ('en' !== $displayLocale) {
+            IntlTestHelper::requireFullIntl($this);
+        }
+
         $names = Countries::getAlpha3Names($displayLocale);
 
         $alpha3Codes = array_keys($names);
