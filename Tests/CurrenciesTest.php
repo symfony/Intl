@@ -314,6 +314,7 @@ class CurrenciesTest extends ResourceBundleTestCase
         'ZRN',
         'ZRZ',
         'ZWD',
+        'ZWG',
         'ZWL',
         'ZWR',
     ];
@@ -531,6 +532,7 @@ class CurrenciesTest extends ResourceBundleTestCase
         'CSD' => 891,
         'ZMK' => 894,
         'TWD' => 901,
+        'ZWG' => 924,
         'SLE' => 925,
         'VED' => 926,
         'UYW' => 927,
