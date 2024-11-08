@@ -226,7 +226,6 @@ return [
         'Asia/Brunei' => 'Brunei (Brunei áigi)',
         'Asia/Calcutta' => 'Kolkata (India áigi)',
         'Asia/Chita' => 'Chita (Ruošša áigi)',
-        'Asia/Choibalsan' => 'Choibalsan (Mongolia áigi)',
         'Asia/Colombo' => 'Colombo (Sri Lanka áigi)',
         'Asia/Damascus' => 'Damascus (nuorti-Eurohpá áigi)',
         'Asia/Dhaka' => 'Dhaka (Bangladesh áigi)',

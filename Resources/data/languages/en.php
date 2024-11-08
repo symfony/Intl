@@ -200,7 +200,6 @@ return [
         'gmh' => 'Middle High German',
         'gn' => 'Guarani',
         'goh' => 'Old High German',
-        'gom' => 'Goan Konkani',
         'gon' => 'Gondi',
         'gor' => 'Gorontalo',
         'got' => 'Gothic',

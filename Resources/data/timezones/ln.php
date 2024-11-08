@@ -219,7 +219,6 @@ return [
         'Asia/Brunei' => 'Ngonga ya Brineyi (Brunei)',
         'Asia/Calcutta' => 'Ngonga ya Índɛ (Kolkata)',
         'Asia/Chita' => 'Ngonga ya Risí (Chita)',
-        'Asia/Choibalsan' => 'Ngonga ya Mongolí (Choibalsan)',
         'Asia/Colombo' => 'Ngonga ya Sirilanka (Colombo)',
         'Asia/Damascus' => 'Ngonga ya Sirí (Damascus)',
         'Asia/Dhaka' => 'Ngonga ya Bengalidɛsi (Dhaka)',

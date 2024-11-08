@@ -217,7 +217,6 @@ return [
         'Asia/Brunei' => 'tempo de Brunejo (Brunei)',
         'Asia/Calcutta' => 'tempo de Hindujo (Kolkata)',
         'Asia/Chita' => 'tempo de Rusujo (Chita)',
-        'Asia/Choibalsan' => 'tempo de Mongolujo (Choibalsan)',
         'Asia/Colombo' => 'tempo de Srilanko (Colombo)',
         'Asia/Damascus' => 'tempo de Sirio (Damascus)',
         'Asia/Dhaka' => 'tempo de Bangladeŝo (Dhaka)',
