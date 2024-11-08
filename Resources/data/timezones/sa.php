@@ -169,8 +169,6 @@ return [
         'Atlantic/Madeira' => 'पाश्चात्य यूरोपीय समयः (Madeira)',
         'Atlantic/Reykjavik' => 'ग्रीनविच मीन समयः (Reykjavik)',
         'Atlantic/St_Helena' => 'ग्रीनविच मीन समयः (St. Helena)',
-        'CST6CDT' => 'उत्तर अमेरिका: मध्य समयः',
-        'EST5EDT' => 'उत्तर अमेरिका: पौर्व समयः',
         'Etc/GMT' => 'ग्रीनविच मीन समयः',
         'Etc/UTC' => 'समन्वितः वैश्विक समय:',
         'Europe/Amsterdam' => 'मध्य यूरोपीय समयः (Amsterdam)',
@@ -228,8 +226,6 @@ return [
         'Europe/Warsaw' => 'मध्य यूरोपीय समयः (Warsaw)',
         'Europe/Zagreb' => 'मध्य यूरोपीय समयः (Zagreb)',
         'Europe/Zurich' => 'मध्य यूरोपीय समयः (Zurich)',
-        'MST7MDT' => 'उत्तर अमेरिका: शैल समयः',
-        'PST8PDT' => 'उत्तर अमेरिका: सन्धिप्रिय समयः',
         'Pacific/Honolulu' => 'संयुक्त राज्य: समय: (Honolulu)',
     ],
     'Meta' => [

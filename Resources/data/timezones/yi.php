@@ -202,7 +202,6 @@ return [
         'Asia/Brunei' => 'ברוניי (Brunei)',
         'Asia/Calcutta' => 'אינדיע (Kolkata)',
         'Asia/Chita' => 'רוסלאַנד (Chita)',
-        'Asia/Choibalsan' => 'מאנגאליי (Choibalsan)',
         'Asia/Colombo' => 'סרי־לאַנקאַ (Colombo)',
         'Asia/Damascus' => 'סיריע (Damascus)',
         'Asia/Dhaka' => 'באַנגלאַדעש (Dhaka)',

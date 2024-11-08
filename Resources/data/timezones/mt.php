@@ -227,7 +227,6 @@ return [
         'Asia/Brunei' => 'Ħin ta’ il-Brunei (Brunei)',
         'Asia/Calcutta' => 'Ħin ta’ l-Indja (Kolkata)',
         'Asia/Chita' => 'Ħin ta’ ir-Russja (Chita)',
-        'Asia/Choibalsan' => 'Ħin ta’ il-Mongolja (Choibalsan)',
         'Asia/Colombo' => 'Ħin ta’ is-Sri Lanka (Colombo)',
         'Asia/Damascus' => 'Ħin ta’ is-Sirja (Damasku)',
         'Asia/Dhaka' => 'Ħin ta’ il-Bangladesh (Dhaka)',
